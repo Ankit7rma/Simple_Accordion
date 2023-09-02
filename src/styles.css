@@ -1,0 +1,49 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+/* Accordion container */
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+/* Accordion item */
+.accordion-item {
+  border-top: 1px solid #ccc;
+  overflow: hidden;
+}
+
+/* Accordion header */
+.accordion-header {
+  padding: 10px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Accordion content */
+.accordion-content {
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+/* Styling for an open accordion item */
+.accordion-item.open .accordion-header {
+  background-color: #e0e0e0;
+}
+
+/* Styling for the arrow icon indicating open/closed state */
+.accordion-header::after {
+  content: "\25BC"; /* Down arrow */
+  font-size: 12px;
+}
+
+/* Rotate the arrow when the item is open */
+.accordion-item.open .accordion-header::after {
+  transform: rotate(180deg);
+}
